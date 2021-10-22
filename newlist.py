@@ -80,17 +80,17 @@ class NewList(list):
         return total
 
     def __lt__(self, other):
-        """overriding operator <"""
+        """overriding operator < """
         return self.sum_of_list(self.list) < self.sum_of_list(other)
 
     def __eq__(self, other):
-        """overriding operator =="""
+        """overriding operator == """
         return self.sum_of_list(self.list) == self.sum_of_list(other)
 
     def __ne__(self, other):
-        """overriding operator !="""
+        """overriding operator != """
         return self.sum_of_list(self.list) != self.sum_of_list(other)
 
     def __gt__(self, other):
-        """overriding operator >"""
+        """overriding operator > """
         return self.sum_of_list(self.list) > self.sum_of_list(other)

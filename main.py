@@ -1,11 +1,8 @@
 from newlist import NewList
 from metaclass import *
 
-
 if __name__ == "__main__":
     cc = CustomClass()
-    #print(cc.x)
-    #print(cc.line)
     print(cc.custom_x)
     print(cc.custom_line())
     a = [1, 2, 3, 4, 5, 6, 7]
