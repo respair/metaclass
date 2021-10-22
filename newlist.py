@@ -1,5 +1,6 @@
 """list"""
 
+
 class NewList(list):
     """list with advanced features"""
 
@@ -7,6 +8,15 @@ class NewList(list):
         """constructor"""
         if arr is None:
             arr = []
+        else:
+            try:
+                for i in arr:
+                    if not isinstance(i, int):
+                        if not isinstance(i, float):
+                            raise TypeError
+            except TypeError:
+                arr = []
+
         self.list = arr
         self.len = len(arr)
 

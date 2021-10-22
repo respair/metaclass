@@ -17,6 +17,10 @@ class MyTestCase(unittest.TestCase):
     def test_init_empty(self):
         self.assertEqual(self.list.list, [])
 
+    def test_init_error(self):
+        self.list = NewList(['a', 'b'])
+        self.assertEqual(self.list.list, [])
+
     def test_init_not_empty(self):
         test_list = NewList([1, 2, 3, 10, 15])
         self.assertEqual(test_list.list, [1, 2, 3, 10, 15])
