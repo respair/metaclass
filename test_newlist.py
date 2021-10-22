@@ -26,9 +26,18 @@ class MyTestCase(unittest.TestCase):
             self.list.append(i)
         self.assertEqual(self.list.list, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
+    def test_append_len(self):
+        for i in range(10):
+            self.list.append(i)
+        self.assertEqual(self.list.len, 10)
+
     def test_copy(self):
         self.list = self.create_new_list()
         self.assertEqual(self.list.list, self.array)
+
+    def test_copy_len(self):
+        self.list = self.create_new_list()
+        self.assertEqual(self.list.len, 12)
 
     def test_sum_of_list(self):
         self.list = self.create_new_list()
